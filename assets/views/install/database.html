@@ -1,0 +1,46 @@
+<div class="row step-panel">
+	<h2>Database Configuration</h2>
+
+	<div ng-class="{ hidden: !error }" id="error">
+      	<span id="msg">{{ error }}</span>
+    </div>
+
+	<div class="form-group">
+		<label for="host">Host</label>
+		<input type="text" name="host" id="host" class="form-control"  ng-model="dbDetails.host">
+	</div>
+
+	<div class="form-group">
+		<label for="database">Nombre De La Base De Datos</label>
+		<input type="text" name="database" id="database" class="form-control" ng-model="dbDetails.database">
+	</div>
+
+	<div class="form-group">
+		<label for="username">Usuario</label>
+		<input type="username" name="username" id="username" class="form-control" ng-model="dbDetails.username">
+	</div>
+
+	<div class="form-group">
+		<label for="password">Contraseña</label>
+		<input type="password" name="password" id="password" class="form-control" ng-model="dbDetails.password">
+	</div>
+
+	<div class="form-group">
+		<label for="prefix">Prefijo</label>
+		<input type="text" name="prefix" id="prefix" class="form-control" ng-model="dbDetails.prefix">
+		<div class="help-block">Esto se antepondrá a los nombres de tabla de base de datos, se puede dejar en blanco.</div>
+	</div>
+</div>
+
+<hr>
+
+<div class="row manual-fill">
+	<div class="col-sm-6">
+		<p>Puede haber algunos problemas si El Archivo<strong>.env</strong> no se puede escribir. En ese caso se puede abrir con un editor de texto, rellenar los datos de forma manual y marque la casilla a continuación.</p>
+		<div class="checkbox">
+	      	<input type="checkbox" id="filledManually" ng-checked="dbDetails.alreadyFilled" ng-model="dbDetails.alreadyFilled"><label for="filledManually">Completé en más detalles de bases de datos de forma manual</label>	    	
+	  	</div>
+	</div>
+	<div class="col-sm-2"></div>
+	<md-button ng-click="createDb()" class="md-primary md-raised col-sm-4">Siguiente</md-button>
+</div>

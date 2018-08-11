@@ -1,0 +1,29 @@
+<html ng-app="installer">
+	<head>
+		<title>Sispor Archivos</title>
+		<link rel="stylesheet" href="{{ app.base_url ~ '/assets/css/builder.css' }}">
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:100,400,500,600,700' rel='stylesheet' type='text/css'>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+
+	<body id="install">
+
+		<div class="container cont-pad-bottom" id="content">
+			
+			<div class="row logo"><img class="img-responsive" src="assets/images/logo.png" alt="logo"></div>
+			<hr>
+
+			<section class="row update-container">
+				<h2>Bienvenido al Actualizador</h2>
+        		<p class="help-block">Esto puede tardar varios minutos, por favor no cierre esta pestaña del navegador, mientras que la actualización no se ha completado.</p>
+
+				<form method="POST" action="{{ app.base_url ~ '/run-update' }}">
+					<button type="submit" class="btn btn-success">Actualizar ahora</button>
+				</form>
+			</section>
+		</div>
+	</body>
+</html>
+	
+

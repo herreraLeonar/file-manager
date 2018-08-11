@@ -1,0 +1,126 @@
+<div class="material-table" ng-controller="UsersController" ng-class="{ loading: usersAjaxInProgress }">
+    <div class="header" ng-if="!selectedItems.length">
+        <div class="caption">
+            <md-button class="md-primary md-raised" ng-click="showUserModal(null, $event)">{{:: 'add' | translate }}</md-button>
+        </div>
+        <div class="controls">
+            <div class="search">
+                <input placeholder="{{:: 'search' | translate }}" type="text" ng-model="search.query">
+                <i class="icon icon-search"></i>
+            </div>
+        </div>
+    </div>
+    <div class="selected-header" ng-if="selectedItems.length">
+        <div class="caption">{{ selectedItems.length }} {{:: 'usersSelected' | translate }}</div>
+        <div class="controls">
+            <i class="icon icon-trash" ng-click="deleteUsers(selectedItems)"></i>
+        </div>
+    </div>
+    <div class="table table-hover">
+        <div class="table-row table-head">
+            <div class="table-col small-col align-left">
+                <md-checkbox aria-label="select all users" ng-checked="$parent.selectedItems.length === users.all.length" ng-click="toggleAllUsers()"></md-checkbox>
+            </div>
+            <div class="table-col image">{{:: 'avatar' | translate }}</div>
+            <div class="table-col">{{:: 'email' | translate }}</div>
+            <div class="table-col">{{:: 'username' | translate }}</div>
+            <div class="table-col">{{:: 'firstName' | translate }}</div>
+            <div class="table-col">{{:: 'lastName' | translate }}</div>
+            <div class="table-col">{{:: 'gender' | translate }}</div>
+            <div class="table-col small-col align-right"></div>
+        </div>
+
+        <div class="table-body">
+            <div class="table-row" dir-paginate="user in users.all | filter: search.query | itemsPerPage: itemsPerPage" current-page="currentPage" ng-class="{ selected: isItemSelected(user) }" ng-click="select(user)">
+                <div class="table-col small-col align-left">
+                    <md-checkbox aria-label="select user" ng-checked="isItemSelected(user)"></md-checkbox>
+                </div>
+                <div class="table-col image"><img ng-src="{{ users.getAvatar(user) }}"/></div>
+                <div class="table-col name-col">{{ utils.isDemo ? 'Hidden on Demo Site' : user.email }}</div>
+                <div class="table-col">{{ user.username || '-' }}</div>
+                <div class="table-col">{{ user.first_name || '-' }}</div>
+                <div class="table-col">{{ user.last_name || '-' }}</div>
+                <div class="table-col">{{ user.gender || '-' }}</div>
+                <div class="table-col small-col align-right"><i class="icon icon-pencil" ng-click="showUserModal(user, $event); $event.stopPropagation()" ed-tooltip="{{:: 'editUser' | translate }}"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <section class="controls">
+            <div class="per-page">
+                {{:: 'rowsPerPage' | translate }}
+                <md-select ng-model="itemsPerPage">
+                    <md-option value="5">5</md-option>
+                    <md-option value="10">10</md-option>
+                    <md-option value="15">15</md-option>
+                    <md-option value="20">20</md-option>
+                    <md-option value="30">30</md-option>
+                    <md-option value="100">100</md-option>
+                </md-select>
+            </div>
+            <div class="meta">
+                1-{{ itemsPerPage }} {{ 'of' | translate }} {{ users.all.length }}
+            </div>
+            <dir-pagination-controls></dir-pagination-controls>
+        </section>
+    </div>
+
+    <md-progress-circular class="ajax-spinner" md-mode="indeterminate" ng-if="usersAjaxInProgress"></md-progress-circular>
+</div>
+
+<script type="text/ng-template" id="assets/views/modals/edit-user.html">
+    <md-dialog class="md-modal md-modal-wide user-modal">
+        <div class="md-modal-header">
+            <h1>{{:: 'createNewUser' | translate }}</h1>
+            <div ng-click="users.closeModal()" class="md-close-modal"><i class="mdi mdi-close"></i></div>
+        </div>
+        <form ng-submit="submit()">
+
+            <div class="errors"></div>
+
+            <md-input-container>
+                <label for="email">{{:: 'email' | translate }}</label>
+                <input id="email" type="email" ng-model="userModel.email">
+            </md-input-container>
+
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label for="password">{{:: 'password' | translate }}</label>
+                    <input id="password" type="password" ng-model="userModel.password">
+                </md-input-container>
+
+                <md-input-container flex>
+                    <label for="repeatPassword">{{:: 'repeatPassword' | translate }}</label>
+                    <input id="repeatPassword" type="password" ng-model="userModel.password_confirmation">
+                </md-input-container>
+            </div>
+
+            <md-input-container>
+                <label for="username">{{:: 'username' | translate }}</label>
+                <input id="username" type="text" ng-model="userModel.username">
+            </md-input-container>
+
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label for="first_name">{{:: 'firstName' | translate }}</label>
+                    <input id="first_name" type="text" ng-model="userModel.first_name">
+                </md-input-container>
+
+                <md-input-container flex>
+                    <label for="last_name">{{:: 'lastName' | translate }}</label>
+                    <input id="last_name" type="text" ng-model="userModel.last_name">
+                </md-input-container>
+            </div>
+
+            <md-select placeholder="Gender" ng-model="userModel.gender">
+                <md-option value="male" translate>male</md-option>
+                <md-option value="female" translate>female</md-option>
+            </md-select>
+
+            <div class="buttons">
+                <md-button type="button" ng-click="users.closeModal()">{{:: 'cancel' | translate }}</md-button>
+                <md-button type="submit" class="md-primary md-raised" translate>{{ type }}</md-button>
+            </div>
+        </form>
+    </md-dialog>
+</script>

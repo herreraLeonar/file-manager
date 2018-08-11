@@ -1,0 +1,359 @@
+#Login Page
+wrongCredentials: Dirección de correo electrónico o contraseña incorrecta
+noAccount: No tengo una cuenta?
+registerHere: Registrarse aquí.
+login: Iniciar sesión
+password: Contraseña
+email: Email
+enterYourTwitterEmail: Por favor, introduzca su email De twitter
+userWithEmailExists: El usuario con este correo electrónico ya existe.
+enterYourPassword: Ingrese su contraseña
+requestPassword: Una cuenta con esta dirección de correo electrónico ya existe, si desea conectar las dos cuentas por favor rellene existente cuentas contraseña en el campo de abajo.
+wrongPassword: Contraseña parece ser incorrecto, por favor intente de nuevo.
+connect: Conectar
+genericSocialError: A ocurrido un error, porfavor intente de nuevo.
+rememberMe: Recuerdame
+loginNow: Ingresar
+loginWithFacebook: Iniciar sesion con facebook
+loginWithTwitter: Iniciar sesion con twitter
+loginWithGoogle: Iniciar sesion con google
+orLoginWith:  O Iniciar sesion con:
+
+#Register Page
+alreadyHaveAccount: Ya tienes una cuenta?
+repeatPassword: Repetir Contraseña
+logInHere: Ingresa aquí.
+register: Registrar
+
+#Dashboard
+sort: Ordenar
+actions: Acciones
+cardNumber: Numero de tarjeta
+expMonth: Mes de Vencimiento
+expYear: Año de Vencimiento
+securityCode: Codigo de seguridad
+expirationDate: Fecha de vencimiento
+month: Mes
+year: Año
+creditCard: Tarjeta de Credito o Tarjeta de Debito
+upgrade: Atualizar
+unsubscribe: Cancelar la suscripción
+addNewCard: Agregar Tarjeta De Credito
+invoices: Factura
+subscribedExpl: Losa pagos estan afiliados <strong>{{plan}}</strong>. A tu tarjeta de credito ({{lastFour}}) será cargada automáticamente <strong>{{amount}}</strong> cada mes hasta que se cancele (se elige plan gratuito).
+onGracePeriodExpl: Ha cancelado su suscripción y actualmente se encuentran en período de gracia de hasta que <strong>{{date}}</strong>. Después de tiempo se le volvió de nuevo al plan gratuito.
+free: GRATIS
+chose: Seleciona
+currentPlan: Plan Actual
+month: mes
+year: año
+upgradeSuccess: Su cuenta ha sido actualizado con exito.
+noFilePreview: No esta disponible ver este archivo.
+cantPlayAudio: Hubo un problema al reproducir este archivo de audio.
+cantPlayVideo: Hubo un problema al reproducir este archivo de video.
+cantShowText: Hubo un problema al previsualizar este archivo de texto.
+cantPreviewZip: Hubo un problema al previsualizar este archivo zip.
+mustBeNumber: Porfavor introduzca un numero.
+cantBeEmpty: Por favor introduzca algo.
+itemsSelected: Artículos Seleccionados
+upload: Cargar
+cancel: Cancelar
+create: Crear
+createNewFolder: Crear una nueva carpeta 
+name: Nombre
+folderAlreadyExists: La Carpeta con ese nombre ya existe.
+newFolderCreated: Carpeta creada.
+folders: Carpetas
+newFolder: Nueva Carpeta
+uploading: Cargando
+rename: Renombrar
+uploadsInProgress: Carga en progreso
+uploadsComplete: Carga completa
+rejected: Rechazado
+sizeBigFirst: Tamaño - más grande primero
+sizeSmallFirst: Tamaño - más pequeño primero
+type: Tipo
+modified: Modificado
+dateUploaded: Fecha de carga
+uploadDndExpl: Usted puede arrastrar y soltar los archivos o carpetas en cualquier lugar de la página para subirlos.
+uploadDndExplNoFolder: Puede arrastrar y soltar los archivos en cualquier lugar de la página para subirlos.
+new: Nuevo
+orderBy: Ordenar por
+folders: Carpetas
+folder: Carpeta
+moreOptions: Mas opciones
+rootFolderDesc: Carpeta Base. Todos los archivos no se han subido o movidos a una carpeta específica terminarán acá.
+rootFolder: Root Carpeta
+sortOptions: Opciones De Orden
+size: Tamaño
+searchResults: Resultados de búsqueda
+activity: Actividad
+renamed: Renombrar
+copyLink: Copiar link
+favoritesEmpty1: Usted no ha añadido nada a sus favoritos todavía.
+favoritesEmpty2: Añadir archivos a favoritos para encontrarlos fácilmente más tarde.
+trashEmpty1: No hay nada en la basura actualmente.
+trashEmpty2: Eliminar archivos para moverlos a la papelera de forma automática. Eliminar archivos de la basura para eliminar de forma permanente.
+recentEmpty1: No hay archivos recientes.
+recentEmpty2: Una vez que subir algunos archivos, aparecerá aquí los recientes.
+searchEmpty1: No hay resultados.
+searchEmpty2: No se pudo encontrar las carpetas o archivos que coincidan con la consulta de búsqueda.
+dropFilesFoldersHere: Soltar archivos y carpetas aquí
+dropFilesHere: Soltar archivos aquí
+smallScreenFolderEmpty: Aún No hay archivos en esta carpeta.
+smallScreenFolderEmpty2: Use the new button above to upload some.
+orUseBtnsAbove: O utilice uno de los botones de color naranja arriba.
+toggleView: Cambiar a la vista de lista
+searchFilesFolders: Búsqueda de archivos y carpetas
+maxSimultUploadsWarning: Sólo se puede cargar {{ number }} archivos a la vez.
+maxSimultUploads: Cargas máximas simultáneas.
+maxSimultUploadsExpl: ¿Cuántos archivos el usuario puede subir al mismo tiempo.
+
+#Right Panel
+uploadActivity: Cargado
+items: Items
+allFolders: Todas Las Carpetas
+ago: hace
+created: Creado
+folder: Carpeta
+addToFavorites: Agregar
+description: Descripcion
+files: Archivos
+none: Nada
+yes: Si
+no: No
+recentActivity: Actividad Reciente
+
+#Left Panel
+trash: Papelera
+recent: Reciente
+favorites: Favoritos
+
+#Navbar
+searchFilesAndFolder: Buscar Archivos y carpetas
+editUsername: Editar Nombre De Usuario
+changeAvatar: Cambiar Avatar
+logOut: Salir
+accountSettings: Configuraciones de la cuenta
+confirm: Confirmar
+noMatches: No hay archivos o carpetas que coinciden con su búsqueda.
+dashboard: Escritorio
+links: Links
+comments: Commentarios
+
+#Account
+username: Nombre De Usuario
+firstName: Primer Nombre
+lastName: Apellido
+gender: Sexo
+male: Masculino
+female: Femenino
+notSaying: No Decir
+oldPassword: Vieja Contraseña
+passwordChangeSuccess: Su contraseña se ha cambiado correctamente.
+avatarAcceptedFormats: Formatos Aceptados: png, jpeg.
+avatarResizeExpl: Tu imagen será redimensionada a 200x200 (px) si es más grande entonces que.
+view: Ver
+
+#Responses
+cardAddSucess: Agregado nueva tarjeta exitosamente.
+unsubSuccess: Suscripción Cancelada exitosamente.
+subResumeSuccess: Resumed your subscription successfully.
+planSwapSuccess: Cambió De plan: exitosamente.
+cancelSub: Cancelar su suscripción
+cancelSubConfirm: Esto cancelar su suscripción actual, ya no cobrará mensualmente y que será revertido al plan gratuito después de su tiempo de suscripción actual se agota, ¿estás seguro de que deseas continuar?
+genericError: Something went wrong, please try again later.
+favoriteSuccess: Se Agregaron Exitosamente A Los Favoritos.
+favoriteDetachSuccess: Se Eliminaron de la lista de favoritos con Exito.
+favoriteExists: Usted ya ha marcado esta foto como favorita.
+passMatches: La contraseña es correcta.
+noSpaceLeft: Usted está fuera del espacio. Por favor, elimine algunos archivos.
+passDoesntMatch: Contraseña incorrecta. Por favor, inténtalo de nuevo.
+descriptionUpdated: Descripción actualizado correctamente.
+noPermissions: Usted no tiene permisos de hacer esto.
+profileUpdateSuccess: Su perfil se ha actualizado correctamente.
+avatarRemoveSuccess: Avatar eliminado con éxito.
+copiedItems: Copiados {{ number }} items.
+folderDownloadProbelm: Hubo un problema con la descarga de esta carpeta, por favor intente de nuevo más tarde.
+nothingToPreview: Esta carpeta está vacía.
+folderRenameSuccess: Carpeta Renombrado exitosamente.
+photoMovedToTrash: La foto se ha movido a la papelera.
+movedToTrash: Movidos {{ number }} items a la papelera.
+permaDeletedItems: Eliminado Permanentemente {{ number }} items.
+permaDeleteFolderWarning: Seguro que quieres eliminar esta carpeta?
+deleteItems: Eliminar Items
+sureWantToDeleteItems: Seguro que quieres eliminar estos items?
+fileRenameSuccess: Renombrar un archivo.
+movedItems: Movido {{ number }} items a {{ folder }}
+noPermissions: Usted no tiene los permisos necesarios para acceder a esta página.
+createdUserSuccessfully: Usuario Creado Exitosamente.
+updatedUserSuccessfully: Usuario Actualizado Exitosamente.
+settingsUpdated: Ajustes Actualizados Exitosamente.
+folderDownloadProblem: Hubo un problema con la descarga de esta carpeta. Por favor, inténtelo más tarde.
+logOutSuccess: Desconectado exitosamente.
+savedPhotoSuccessfully: Foto Guardada exitosamente.
+restoreSuccess: Restaurada {{ number }} items.
+photoAttachSuccess:Adjunto: número de foto (s) a su cuenta de que ha subido, mientras que cerrado la sesión.
+deletedUsers: Eliminados :numero de usuarios.
+registrationDisabled: Registration is disabled.
+folderNameExists: Usted ya tiene una carpeta con ese nombre.
+fileTooBig: Este archivo es demasiado grande. El tamaño máximo de archivo es {{ number }} megabytes.
+invalidExtension: No se le permite subir archivos de este tipo.
+sentEmailsSuccess: Email Enviado Exitosamente.
+copiedLink: Link copiado al portapapeles.
+copyNotSupported: No es compatible con tu navegador.
+update: Actualizar
+
+#Trash
+deleteForever: Eliminar Permanentemente
+confirmPermaDelete: Seguro que quieres borrar permanentemente estos item(s)?
+delete: Eliminar
+permaDeleteWarning: Advertencia: esta acción no se puede deshacer.
+restore: Restaurar
+trashed: Papelera
+permaDeleted: Eliminado Permanentemente
+
+#Context menu
+preview: Vista previa
+openInEditor: Abrir en el editor
+share: Compartir
+getLink: Get link
+moveTo: Mover a
+favorite: Favorito
+manageVersions: Administrar Versiones...
+makeACopy: Hacer una copia
+download: Descargar
+remove: Eliminar
+
+#Share Panel
+passwordAddSuccess: Contraseña agregada exitosamente.
+passwordRemoveSuccess: Contraseña Eliminada exitosamente.
+copyLink: Copiar link
+sendLinkViaEmail: Enviar este enlace por correo electrónico
++email: +Email
+messageOptional: Mensage (opcional)
+notPassProtected: Cualquier persona con el enlace puede ver esto
+passProtected: está protegido con contraseña
+this: Esta
+addPassword: Agregar contraseña.
+remove: Eliminar.
+add: Agregar
+done: Listo
+photoPassMessage: Este Item está protegido por contraseña. Introduzca en el campo de abajo para ver el elemento.
+folderPassMessage: Esta carpeta está protegido con contraseña. Introduzca en el campo de abajo para ver la carpeta.
+facebookShare: Compartir en Facebook
+twitterShare: Twitter
+pinterestShare: Pinterest
+
+# Password reset
+passwordRecovery: Recuperar Contraseña
+sendEmail: Enviar Email
+passResetExpl: Por favor, introduzca la dirección de correo electrónico asociada a tu cuenta.
+resetPassword: Restaurar Contraseña
+resetErrors: Hubo algunos problemas con su entrada.
+emailAddress: Direccion De E-Mail
+confirmPassword: Confirmar contraseña
+newPassword: Nueva Contraseña
+forgot: Olvidó?
+
+# Emails
+linkShareSubject: :email comparte ":archivo" contigo.
+justShared: simplemente compartir un archivo con usted!
+clickToView: Haga clic aquí para ver
+
+# Admin
+users: Usuarios
+user: Usuario
+enablePushState: Activar el modo HTML5 Pushstate
+settings: Ajustes
+deleted: Eliminado
+of: de
+createNewUser: Creae nuevo usuario
+search: Buscar
+editUser: Editar Usuario
+edit: Editar
+analytics: Analytica
+avatar: Avatar
+rowsPerPage: Filas por pagina:
+googleAnalyticsCode: Google analytics tracking code
+googleAnalyticsCodeExpl: Looks like this UA-******-2 (numbers instead of stars)
+mandrillExpl: Your mandrill API Key. Required to make mail (for password reset and other functions) work. You can use an smtp server as well but mandrill is more reliable and will cause less problems.
+usersSelected: Usuarios Selecionados
+inTrash: En Papelera
+filesSelected: archivos seleccionados
+uploadedAt: Cargado El
+uploaded: Cargado
+dateLocale: Fecha Local
+dateLocaleExpl: Desea fechas Local formateadas en. ISO 639-1 .
+ads: Ads
+siteName: Nombre del sitio
+metaTitle: Meta Titulo
+metaDescription: Meta Descripcion
+metaKeywords: Meta Keywords(palabras clave)
+generalSettings: Configuracion General Del Sitio
+filesValidation: Validacion de Archivos
+enablePaymentsSystem: Activar Sistema de pagos
+enablePaymentsSystemExpl: Si se establece en "no" todas las cosas relacionadas con el pago (botón, urls pertinentes etc actualizar) se desactivará y / u oculta.
+freePlanSpace: El espacio en disco para los usuarios en plan gratuito (o todos los usuarios pagos están desactivados)
+maxUserSpaceExpl: ¿Cuánto espacio se permiten cada archivos de los usuarios a tomar en su servidor. en bytes.
+converter: Convertir
+used: used
+maxFileSize: Tamaño máximo del archivo
+maxFileSizeExpl: El tamaño máximo de archivo que los usuarios pueden cargar. en megabytes.
+allowedFormats: Formatos Permitidos
+whitelist: Lista blanca
+blacklist: Lista negra
+whitelistExpl: Expl lista blanca
+Los usuarios sólo podrán cargar archivos con estos formatos. Ejemplo: mp4, jpg, mp3, pdf. Dejar en blanco para permitir que todos los formatos a ser subidos.
+blacklistExpl: Prevenir estos formatos de archivo que pueden cargar incluso si se encuentran en lista blanca o todos los formatos están permitidos.
+stripePubKey: Stripe Publishible Key
+stripeSecretKey: Stripe Secret Key
+stripePubKeyExpl: Required in order for payments system to work.
+invoiceProduct: Producto en la factura
+invoiceVendor: Vendedor de la Factura
+invoiceProductExpl: Nombre del producto que aparece en las facturas generadas para las suscripciones. Opcional.
+invoiceVendorExpl: Nombre del proveedor que aparece en las facturas generadas para las suscripciones. Opcional.
+payments: Payments
+disqusShortname: Escriba Nombre Corto
+disqusShortnameExpl: Su nombre corto, es necesaria para para comentarios de trabajos.
+id: ID
+secret: Secreto
+3rdPartyServiceKeys: Claves de Servicios para Terceros
+showKeys: Mostrar Claves
+socialLoginKeysExpl: Introduzca sus credenciales de inicio de sesión para los servicios sociales de abajo. Puede encontrar información sobre la manera de conseguir que en la documentación.
+enableRegistration: Habilitar registro
+enableRegistrationExpl: Si se establece en "No", la página de registro y todos los enlaces / referencias se desactivarán y los usuarios no podrán inscribirse.
+adminArea: Area De Administracion
+homepage: Pagina de Inicio
+homeTagline:  Lema De Inicio
+homeTaglineExpl: Este aparecerá en su página de inicio (si está configurado en la página de destino), justo debajo de la barra de navegación.
+homeByline: Sub Titulo Del Inicio
+homeBylineExpl: Este aparecerá en su página de inicio (si está configurado en la página de destino), justo por debajo del lema.
+homeButtonText: Texto Del Boton De Inicio
+homeButtonTextExpl: Texto del botón que aparece debajo del Mensaje De Inicio.
+landingPage: Página de destino
+loginPage: Página de inicio de sesión
+customPage: Página personalizada
+homepageExpl: ¿En qué página quieres mostrar como página de inicio.
+customHomepagePath: Ruta Página de inicio personalizada 
+customHomepagePathExpl: Ruta al archivo de página personalizado. Relativa a la carpeta raíz o url en internet.
+metaInformation: Meta Informacion
+validation: Validacion
+notAttachedToUser: Only show files not attached to user.
+
+# Homepage
+random: Random
+toSaveManageAndEdit: guardar, gestionar y editar sus archivos subidos.
+goTo: Ir A
+uploadComplete: Carga completa
+noFilesUploaded: Ningún archivo se han subido
+filesValidationFailed: Los archivos parecen haber fallado nuestra validación. Por favor, inténtalo de nuevo.
+loginToUpload: Por favor, registrarse o iniciar sesión para subir sus archivos.
+
+# Titles
+loginTitle: Iniciar sesión
+registerTitle: Registrarse
+resetPasswordTitle: Restablecer la contraseña
+foldersRoot: Carpetas
+dashboardTitle: Escritorio - Sispor
+homeTitle: Inicio de los archivos.

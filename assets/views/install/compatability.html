@@ -1,0 +1,41 @@
+<div id="compat-check" class="step-panel">
+	<p>En primer lugar vamos a comprobar si su servidor cumple los requisitos para <strong>Sispor Archivos</strong>, si no, el instalador mostrará una lista de todos los problemas que debe corregir antes de continuar. Hacer clic <strong>Comprobar</strong> para continuar.</p>
+  <p>Si no ocurre nada al hacer clic en <strong>Comprobar</strong> por favor asegúrese de que el Archivo <strong>.htaccess</strong> existe en la carpeta raíz Sispor Archivos y que tiene el mismo contenido que <strong>.htaccess</strong> que descargaste de Sispor C.A.</p>
+
+	<div class="col-sm-offset-5 clearfix">
+		<md-button class="md-raised md-primary" ng-click="checkCompat()">Comprobar</md-button>
+		<md-button class="md-raised md-primary" ng-disabled="!enableNextStep" ng-click="nextStep()">Siguiente</md-button>
+	</div>
+
+	<h4 class="hidden" id="problem">Parece que hay algunos problemas con el servidor, para continuar tendrás que arreglarlos. Consulte la tabla a continuación para obtener más detalles.</h4>
+
+	<table ng-if="compatResults" class="table table-striped">
+    	<thead>
+        	<tr>
+          		<th>#</th>
+          		<th>Tipo</th>
+          		<th>Nombre</th>
+          		<th>Debe ser</th>
+          		<th>Es</th>
+        	</tr>
+      	</thead>
+     	<tbody>
+        	<tr ng-repeat="extension in compatResults.extensions">
+          		<td>{{ $index + 1 }}</td>
+          		<td>Extension</td>
+          		<td>{{ extension.name }}</td>
+          		<td><span class="success">{{ extension.expected ? 'Activo' : 'Inactivo' }}</span></td>
+          		<td><span ng-class="extension.expected === extension.actual ? 'success' : 'danger'">{{ extension.actual ? 'Activo' : 'Inactivo' }}</span></td>
+        	</tr>
+
+        	<tr ng-repeat="folder in compatResults.folders">
+          		<td>{{ $index + compatResults.extensions.length }}</td>
+          		<td>Directorio</td>
+          		<td>{{ folder.path }}</td>
+          		<td><span class="success">Escribible</span></td>
+          		<td><span ng-class="folder.writable ? 'success' : 'danger'">{{ folder.writable ? 'Escribible' : 'No-Escribible' }}</span></td>
+          		
+        	</tr>
+      	</tbody>
+    </table>
+</div>  
